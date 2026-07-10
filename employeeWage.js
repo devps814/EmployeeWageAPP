@@ -63,6 +63,13 @@ function getWorkingHours(empCheck) {
     }
 }
 
+console.log("======================================");
+console.log("Monthly Summary");
+
+console.log("Total Working Days  :", totalWorkingDays);
+console.log("Total Working Hours :", totalEmpHours);
+console.log("Total Salary        : $" + totalEmpWage);
+
 
 
 
