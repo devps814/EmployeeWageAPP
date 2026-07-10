@@ -11,6 +11,16 @@ const WAGE_PER_HOUR = 20;
 const MAX_WORKING_DAYS = 20;
 const MAX_WORKING_HOURS = 160;
 
+console.log("======================================");
+console.log("      Employee Wage Computation");
+
+// uc4
+while (
+    totalEmpHours < MAX_WORKING_HOURS &&
+    totalWorkingDays < MAX_WORKING_DAYS
+){
+totalWorkingDays++;
+
     let empCheck = Math.floor(Math.random() * 3);
 
     let empHours = getWorkingHours(empCheck);
@@ -38,7 +48,7 @@ switch (empCheck) {
 
     console.log("Working Hours :", empHours);
     console.log("Daily Wage    : $" + dailyWage);
-
+}
     // UC3
 function getWorkingHours(empCheck) {
     switch (empCheck) {
@@ -52,6 +62,7 @@ function getWorkingHours(empCheck) {
             return 0;
     }
 }
+
 
 
 
